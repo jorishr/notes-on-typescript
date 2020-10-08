@@ -1,0 +1,15 @@
+// Typescript config file example
+{
+    "compilerOptions": {
+        "module": "commonjs",   // commonjs for node, AMD for use in browser
+        "target": "esnext",     // language target, for browsers use ES5
+        "outDir": "dist",       // specify the target dir for outfiles
+        "watch": true,
+        "lib": ["DOM", "es2017"]    //include native browser DOM classes or other libraries
+    },
+    "include": ["./*.ts", "src/**/*"],  
+    "exclude": ["node_modules"]
+}
+
+// put this tsconfig.json into the root folder of the project
+// run tsc (typescript compiler)ts
