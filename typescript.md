@@ -76,6 +76,21 @@ function greeter(person: string) {
 let user = [0, 1, 2];	
 document.body.textContent = greeter(user);
 //-> error 
+
+//to be even more restrictive you can specify which string values you expect
+
+function greeter(person: "Joris" | "Jack" | "John" ) {
+    return "Hello, " + person;
+}
+//intellisense will give you the allowed options when calling the function:
+greeter('Joe') //-> not assignable
+
+//using the TYPE keyword you can define a range of types that can be re-used
+type PersonType = string | boolean | number;
+
+function greeter(person: PersonType ) {
+    return "Hello, " + person;
+}
 ```
 
 ### Interfaces
