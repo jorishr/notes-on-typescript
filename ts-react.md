@@ -15,7 +15,7 @@ Table of contents
 TypeScript files will start out in your src folder, run through the TypeScript compiler, then webpack, and end up in a main.js file in the dist folder.
 
 ## Install
-```
+```bash
 npm install --save-dev webpack webpack-cli
 npm install --save react react-dom
 npm install --save-dev @types/react @types/react-dom

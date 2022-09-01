@@ -1,7 +1,7 @@
-# Typescript
+# TypeScript
 Table of contents
-- [Typescript](#typescript)
-  - [About typescript](#about-typescript)
+- [TypeScript](#typescript)
+  - [About TypeScript](#about-typescript)
   - [When to use](#when-to-use)
   - [Instal and project setup](#instal-and-project-setup)
   - [TS + Gulp](#ts--gulp)
@@ -15,34 +15,34 @@ Table of contents
     - [Generics](#generics)
     - [Objects](#objects)
 
-## About typescript
-Typescript is a superset of JS that needs to be compiled into regular JS to run in a browser. 
+## About TypeScript
+TypeScript is a superset of JS that needs to be compiled into regular JS to run in a browser. 
 
 Dynamic versus static typing. With static typing you have specify the type of data that a variable will hold (booleans, number, string, etc.). With dynamic typing this can change easily.
 
 Errors with static typing are caught when compiling to regular JS which makes it safer because errors with dynamic typing are caught at run time in the browser by the user. 
 
-Which Typescript features you use is optional. Which makes it a good compromise.
+Which TypeScript features you use is optional. Which makes it a good compromise.
 
 ## When to use
-Typescript becomes useful when you work with larger codebases because no single person will have written all the components and especially when components are built on top of one another, a loosly typed language may conceal potential errors and inconsistencies.
+TypeScript becomes useful when you work with larger codebases because no single person will have written all the components and especially when components are built on top of one another, a loosely typed language may conceal potential errors and inconsistencies.
 
 ## Instal and project setup
-`npm install -g typescript`
+`npm install -g TypeScript`
 
-Compile manually using the CLI, a config file or a taskrunner such as Gulp or Webpack.
-```
-tsc <ts-file>	// auto compiler
+Compile manually using the CLI, a config file or a task runner such as Gulp or Webpack.
+```bash
+tsc <ts-file>	# auto compiler
 
-//see tsconfig.ts in JS folder for example of configuration and task automation.
+# see tsconfig.ts in JS folder for example of configuration and task automation.
 
 tsc -w 		
-// watches the files you specified in the tsconfig.json
+# watches the files you specified in the tsconfig.json
 ```
 
 ## TS + Gulp
 ```
-npm install --save-dev typescript gulp gulp-typescript
+npm install --save-dev TypeScript gulp gulp-TypeScript
 ```
 Create the file tsconfig.json which takes in the main.ts files and creates an ES5 browser compatible file in the .dist folder through the gulp pipeline.
 ```js
@@ -67,7 +67,7 @@ gulp.task('default', function () {
 
 ## Type checking
 ### Type annotation
-In the function below we expect the parameter person to be a string. If you call the function without a string paramater or with an arr or any other data type, TS will warn you.
+In the function below we expect the parameter person to be a string. If you call the function without a string parameter or with an arr or any other data type, TS will warn you.
 ```js
 function greeter(person: string) {
     return "Hello, " + person;
@@ -107,7 +107,7 @@ function greeter(person: Person) {
 }
 ```
 ### Classes
-The use of `public` on arguments to the constructor is a shorthand that allows us to automatically create properties with that name.
+The use of `public` on arguments to the constructor is a short hand that allows us to automatically create properties with that name.
 ```js
 class Student {
     fullName: string;

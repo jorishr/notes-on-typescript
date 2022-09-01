@@ -11,7 +11,7 @@ Class hierarchy example: Animal as parent or base class -> Dog and Cat as child 
 ### Extend a class
 By extending the class the child classes inherit the parent class properties and method. You can also add properties and method to each child each class.
 
-If no constructor is defined on the child class, JS/TS implements that for us. However, if you do use a constructor on a child class, you have to use the super() method and pass the inherited properties to as parameters.
+If no constructor is defined on the child class, JS/TS implements that for us. However, if you do use a constructor on a child class, you have to use the `super()` method and pass the inherited properties to as parameters.
 ```ts
 class Animal {
     age: number;
@@ -42,7 +42,7 @@ class Cat extends Animal {
     constructor(data: {age: number, legs: number, name: string}) {
         super(data.age, data.legs, data.name);
     }
-    //the super keyword also gives you access to the parent class properties direclty if a constructor is used
+    //the super keyword also gives you access to the parent class properties directly if a constructor is used
     super.age
     super.legs
     super.name
@@ -56,7 +56,7 @@ class Cat extends Animal {
 ### Implement a class
 A class implementation only matches the same shape as the parent class but it is not a child class. Thus objects created with an implementation class are not instances of the parent class.
 
-You have to redine the properties from the parent class.
+You have to redefine the properties from the parent class.
 ```ts
 class Dog implements Animal {
     age: number;

@@ -3,7 +3,7 @@
     "compilerOptions": {
         "module": "commonjs",   // commonjs for node, AMD for use in browser
         "target": "esnext",     // language target, for browsers use ES5
-        "outDir": "dist",       // specify the target dir for outfiles
+        "outDir": "dist",       // specify the target dir for output files
         "watch": true,
         "lib": ["DOM", "es2017"]    //include native browser DOM classes or other libraries
     },

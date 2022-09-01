@@ -3,7 +3,7 @@ Encapsulation and access modifiers: regulate how you get access to properties an
 - private: property values are only accessible from within the exact same class
 - protected: property values can be accessed through child classes
 - public: other non-related classes can access the property value
-- static: a method that is used as a utiltity function at class level and does not get instanciated on objects created by that class, it cannot reference the this keyword.
+- static: a method that is used as a utility function at class level and does not get instantiated on objects created by that class, it cannot reference the this keyword.
 
 By default, a property defined in a class is public. You can access it easily by typing: `objectFromClass.property1`
 ```ts

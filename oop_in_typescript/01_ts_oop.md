@@ -7,9 +7,9 @@
 ## Classes
 Instead of regular objects, use classes to define objects that can be easily kept in sync. 
 ```ts
-const messeage1 = {title: undefined, message: undefined};
-const messeage2 = {title: undefined, message: undefined};
-const messeage3 = {title: undefined, message: undefined};
+const message1 = {title: undefined, message: undefined};
+const message2 = {title: undefined, message: undefined};
+const message3 = {title: undefined, message: undefined};
 //...
 //if you would want to add a property id to all messages, that would have to be done manually
 //instead use a class and all properties added to the class will initiated on each instance object of the class:
@@ -32,7 +32,7 @@ const message1 = new Message('title1', 'message1', 'id1');
 const message2 = new Message('title2', 'message2', 'id2');
 const message3 = new Message('title3', 'message3', 'id3');
 ```
-Note that the pre-ES2015 syntac would be that of a constructor function that takes in arguments:
+*Note* that the pre-ES2015 syntax would be that of a constructor function that takes in arguments:
 ```ts
 function Message(title, message, id){
     this.title = title;
@@ -42,7 +42,7 @@ function Message(title, message, id){
 const message1 = new Message('title', '...', '0001');
 ```
 ### Class methods
-Class methods are functions that are defined inside a class and availble on every object created by that class. For each function, you can specify what TYPE of value it returns.
+Class methods are functions that are defined inside a class and available on every object created by that class. For each function, you can specify what TYPE of value it returns.
 ```ts
 export class Message {
     title: string;
